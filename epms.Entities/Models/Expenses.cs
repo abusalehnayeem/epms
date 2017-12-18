@@ -1,4 +1,4 @@
-﻿namespace epms.Entities
+﻿namespace epms.Entities.Models
 {
     public class Expenses : BaseEntity
     {

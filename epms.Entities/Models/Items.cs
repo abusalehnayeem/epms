@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace epms.Entities
+namespace epms.Entities.Models
 {
     public class Items : BaseEntity
     {

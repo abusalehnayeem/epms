@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace epms.Entities
+namespace epms.Entities.Models
 {
     public class ItemsLog : BaseEntity
     {

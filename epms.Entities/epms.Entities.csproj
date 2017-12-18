@@ -40,15 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseEntity.cs" />
-    <Compile Include="BillingsHistory.cs" />
-    <Compile Include="Customers.cs" />
-    <Compile Include="Expenses.cs" />
-    <Compile Include="Items.cs" />
-    <Compile Include="ItemsLog.cs" />
+    <Compile Include="Models\BaseEntity.cs" />
+    <Compile Include="Models\BillingsHistory.cs" />
+    <Compile Include="Models\Customers.cs" />
+    <Compile Include="Models\Expenses.cs" />
+    <Compile Include="Models\Items.cs" />
+    <Compile Include="Models\ItemsLog.cs" />
+    <Compile Include="Enum\CustomerType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Session.cs" />
-    <Compile Include="Utilities.cs" />
+    <Compile Include="Models\Session.cs" />
+    <Compile Include="Enum\IdentificationType.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

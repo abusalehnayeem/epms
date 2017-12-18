@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using epms.Entities.Enum;
 
-namespace epms.Entities
+namespace epms.Entities.Models
 {
     public class Customers : BaseEntity
     {
