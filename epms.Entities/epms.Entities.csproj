@@ -44,8 +44,6 @@
     <Compile Include="Models\BillingsHistory.cs" />
     <Compile Include="Models\Customers.cs" />
     <Compile Include="Models\Expenses.cs" />
-    <Compile Include="Models\Items.cs" />
-    <Compile Include="Models\ItemsLog.cs" />
     <Compile Include="Enum\CustomerType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Session.cs" />
