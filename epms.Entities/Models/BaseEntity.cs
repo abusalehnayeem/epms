@@ -10,5 +10,8 @@ namespace epms.Entities.Models
         public string UpdatedBy { get; set; }
         public DateTime UpdatedDateTime { get; set; }
         public bool Status { get; set; }
+        public bool IsActive { get; set; }
+        public int CompanyId { get; set; }
+        public int BranchId { get; set; }
     }
 }

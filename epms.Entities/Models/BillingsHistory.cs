@@ -7,17 +7,18 @@ namespace epms.Entities.Models
         public int Year { get; set; }
         public string Month { get; set; }
         public DateTime BillingDate { get; set; }
-        public double? UnitPrice { get; set; }
-        public int? Quentity { get; set; }
-        public double? TotalPrice { get; set; }
+        public double? TotalAmount { get; set; }
+        public double? DueAmount { get; set; }
         public double? VatAmount { get; set; }
         public double? Discount { get; set; }
         public double? PaidAmount { get; set; }
         public DateTime PaidDate { get; set; }
         public bool? BillStatus { get; set; }
-        public int ItemId { get; set; }
+        public int PackageId { get; set; }
         public int CustomerId { get; set; }
-        public virtual Items Items { get; set; }
+        public int InvoiceId { get; set; }
         public virtual Customers Customers { get; set; }
+        public virtual Package Packages { get; set; }
+        public virtual Invoice Invoices { get; set; }
     }
 }
