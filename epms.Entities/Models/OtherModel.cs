@@ -6,48 +6,14 @@ using System.Threading.Tasks;
 
 namespace epms.Entities.Models
 {
-    public class AccountGroup
-    {
-        public AccountGroup()
-        {
-            this.BalanceSheetConfigurations = new List<BalanceSheetConfiguration>();
-            this.Coas = new List<COA>();
-        }
-
-        public int GroupId { get; set; }
-        public string GroupName { get; set; }
-        public short? CompanyId { get; set; }
-        public bool? IsActive { get; set; }
-
-        public List<BalanceSheetConfiguration> BalanceSheetConfigurations { get; set; }
-        public List<COA> Coas { get; set; }
-    }
 
     public class Branch
     {
         public Branch()
         {
-            this.Accounts = new List<Accounts>();
-            this.Csses = new List<Css>();
-            this.Customers = new List<Customer>();
-            this.DoubleBenefits = new List<DoubleBenefit>();
-            this.FixedDeposites = new List<FixedDeposite>();
-            this.InterestRates = new List<InterestRate>();
-            this.InterestRateHistories = new List<InterestRateHistory>();
-            this.Loans = new List<Loan>();
-            this.LoanAccounts = new List<LoanAccount>();
-            this.LoanAddtionalInfoes = new List<loanAddtionalInfo>();
-            this.LoanInstallmentInformation = new List<LoanInstallmentInformation>();
-            this.LoanScanDocuments = new List<loanScanDocument>();
-            this.LoanSignatoryInfoes = new List<loanSignatoryInfo>();
             this.LookUps = new List<LookUp>();
-            this.MonthlyBenefits = new List<MonthlyBenefit>();
-            this.Savings = new List<Savings>();
-            this.Transactions = new List<Transactions>();
-            this.UserRoleMappings = new List<UserRoleMapping>();
         }
 
-        public short BranchId { get; set; }
         public short CompanyId { get; set; }
         public string BranchName { get; set; }
         public short BranchCode { get; set; }
@@ -60,25 +26,8 @@ namespace epms.Entities.Models
         public DateTime CreatedDate { get; set; }
         public short? UpdatedBy { get; set; }
         public DateTime? UpdatedDate { get; set; }
-
-        public List<Accounts> Accounts { get; set; }
-        public List<Css> Csses { get; set; }
-        public List<Customer> Customers { get; set; }
-        public List<DoubleBenefit> DoubleBenefits { get; set; }
-        public List<FixedDeposite> FixedDeposites { get; set; }
-        public List<InterestRate> InterestRates { get; set; }
-        public List<InterestRateHistory> InterestRateHistories { get; set; }
-        public List<Loan> Loans { get; set; }
-        public List<LoanAccount> LoanAccounts { get; set; }
-        public List<loanAddtionalInfo> LoanAddtionalInfoes { get; set; }
-        public List<LoanInstallmentInformation> LoanInstallmentInformation { get; set; }
-        public List<loanScanDocument> LoanScanDocuments { get; set; }
-        public List<loanSignatoryInfo> LoanSignatoryInfoes { get; set; }
         public List<LookUp> LookUps { get; set; }
-        public List<MonthlyBenefit> MonthlyBenefits { get; set; }
-        public List<Savings> Savings { get; set; }
-        public List<Transactions> Transactions { get; set; }
-        public List<UserRoleMapping> UserRoleMappings { get; set; }
+
     }
 
     public class Company

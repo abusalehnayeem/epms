@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\AccountCategory.cs" />
+    <Compile Include="Models\AccountGroup.cs" />
     <Compile Include="Models\AccountMaster.cs" />
     <Compile Include="Models\BalanceSheetConfiguration.cs" />
     <Compile Include="Models\OtherModel.cs" />
