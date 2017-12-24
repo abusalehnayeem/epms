@@ -17,8 +17,8 @@ namespace epms.Entities.Models
         public int PackageId { get; set; }
         public int CustomerId { get; set; }
         public int InvoiceId { get; set; }
-        public virtual Customers Customers { get; set; }
-        public virtual Package Packages { get; set; }
-        public virtual Invoice Invoices { get; set; }
+        public virtual Customers Customer { get; set; }
+        public virtual Package Package { get; set; }
+        public virtual Invoice Invoice { get; set; }
     }
 }
