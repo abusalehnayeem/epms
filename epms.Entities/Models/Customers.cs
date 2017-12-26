@@ -8,7 +8,11 @@ namespace epms.Entities.Models
     {
         public Customers()
         {
+<<<<<<< HEAD
             BillingsHistory = new List<BillingsHistory>();
+=======
+            BillingsHistorys = new List<BillingsHistory>();
+>>>>>>> 1c32f9f8b81997effd9a9217f18f9d7c7662dcce
         }
 
         public string CustomerNo { get; set; }
@@ -23,6 +27,10 @@ namespace epms.Entities.Models
         public string PhotoPath { get; set; }
         public DateTime FromDate { get; set; }
         public DateTime ToDate { get; set; }
+<<<<<<< HEAD
         public ICollection<BillingsHistory> BillingsHistory { get; set; }
+=======
+        public ICollection<BillingsHistory> BillingsHistorys { get; set; }
+>>>>>>> 1c32f9f8b81997effd9a9217f18f9d7c7662dcce
     }
 }
