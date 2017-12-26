@@ -41,11 +41,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enum\CustomerType.cs" />
+    <Compile Include="Models\AccountCategory.cs" />
+    <Compile Include="Models\AccountMaster.cs" />
+    <Compile Include="Models\BalanceSheetConfiguration.cs" />
+    <Compile Include="Models\BaseEntity.cs" />
+    <Compile Include="Models\BillingsHistory.cs" />
+    <Compile Include="Models\Branch.cs" />
+    <Compile Include="Models\Company.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\AccountGroup.cs" />
+    <Compile Include="Models\Package.cs" />
+    <Compile Include="Models\Session.cs" />
+    <Compile Include="Models\Transaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Enum\IdentificationType.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
