@@ -50,6 +50,7 @@
     <Compile Include="Models\Company.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\AccountGroup.cs" />
+    <Compile Include="Models\ModelContext.cs" />
     <Compile Include="Models\Package.cs" />
     <Compile Include="Models\Session.cs" />
     <Compile Include="Models\Transaction.cs" />
