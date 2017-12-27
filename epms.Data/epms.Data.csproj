@@ -47,14 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mapping\AccountCategoryConfiguration.cs" />
-    <Compile Include="Mapping\AccountGroupConfiguration.cs" />
-    <Compile Include="Mapping\AccountMasterConfiguration.cs" />
-    <Compile Include="Mapping\BalanceSheetConfigurationConfiguration.cs" />
-    <Compile Include="Mapping\BranchConfiguration.cs" />
-    <Compile Include="Mapping\Class1.cs" />
-    <Compile Include="Mapping\CompanyConfiguration.cs" />
-    <Compile Include="Mapping\CustomerConfiguration.cs" />
+    <Compile Include="Configuration\AccountCategoryConfiguration.cs" />
+    <Compile Include="Configuration\AccountGroupConfiguration.cs" />
+    <Compile Include="Configuration\AccountMasterConfiguration.cs" />
+    <Compile Include="Configuration\BalanceSheetConfigurationConfiguration.cs" />
+    <Compile Include="Configuration\BranchConfiguration.cs" />
+    <Compile Include="Configuration\CompanyConfiguration.cs" />
+    <Compile Include="Configuration\CustomerConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

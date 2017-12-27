@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "epms.WebAPI", "epms.WebAPI\epms.WebAPI.csproj", "{4566961D-DDCE-448D-BDAF-2DD1F41B2C00}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "epms.Entities", "epms.Entities\epms.Entities.csproj", "{E4F9D9DB-ABF0-4974-BE18-22932D928699}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "epms.DataTest", "epms.DataTest\epms.DataTest.csproj", "{9EBEA8F9-F596-4E14-8B32-9257FBFC3E81}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "epms.Data", "epms.Data\epms.Data.csproj", "{E48E8252-45CE-41EC-9D10-78F398D22178}"
 EndProject
@@ -25,10 +23,6 @@ Global
 		{E4F9D9DB-ABF0-4974-BE18-22932D928699}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4F9D9DB-ABF0-4974-BE18-22932D928699}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4F9D9DB-ABF0-4974-BE18-22932D928699}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9EBEA8F9-F596-4E14-8B32-9257FBFC3E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9EBEA8F9-F596-4E14-8B32-9257FBFC3E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9EBEA8F9-F596-4E14-8B32-9257FBFC3E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9EBEA8F9-F596-4E14-8B32-9257FBFC3E81}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E48E8252-45CE-41EC-9D10-78F398D22178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E48E8252-45CE-41EC-9D10-78F398D22178}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E48E8252-45CE-41EC-9D10-78F398D22178}.Release|Any CPU.ActiveCfg = Release|Any CPU
