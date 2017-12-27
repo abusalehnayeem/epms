@@ -15,7 +15,6 @@ namespace epms.Entities.Models
         public decimal? Credit { get; set; }
         public bool? IsAdvancePayment { get; set; }
         public bool? IsChequePayment { get; set; }
-        public bool? IsApproved { get; set; }
         public bool? IsCleared { get; set; }
         public string ChequeNo { get; set; }
         public DateTime? ChequeIssueDate { get; set; }
@@ -33,11 +32,8 @@ namespace epms.Entities.Models
         public string CategoryName { get; set; }
         public int? GroupId { get; set; }
         public string GroupName { get; set; }
-        public short? CompanyId { get; set; }
-        public short? BranchId { get; set; }
         public bool? IsRejected { get; set; }
         public bool? IsReversed { get; set; }
         public string RejectReason { get; set; }
-        public string Remarks { get; set; }
     }
 }

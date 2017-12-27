@@ -15,9 +15,9 @@ namespace epms.Entities.Models
         public double? PaidAmount { get; set; }
         public DateTime PaidDate { get; set; }
         public bool? BillStatus { get; set; }
-        public int ItemId { get; set; }
+        public int PackageId { get; set; }
         public int CustomerId { get; set; }
-        public virtual Items Items { get; set; }
-        public virtual Customers Customers { get; set; }
+        public virtual Package Package { get; set; }
+        public virtual Customer Customers { get; set; }
     }
 }
