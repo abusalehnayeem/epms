@@ -1,10 +1,7 @@
-﻿
-using epms.Entities.Models;
-
+﻿using epms.Entities.Models;
 namespace epms.Data.Mapping
 {
     // AccountCategory
-    [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.34.1.0")]
     public class AccountCategoryConfiguration : System.Data.Entity.ModelConfiguration.EntityTypeConfiguration<AccountCategory>
     {
         public AccountCategoryConfiguration()
