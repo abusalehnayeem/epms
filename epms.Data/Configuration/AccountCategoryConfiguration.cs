@@ -12,7 +12,7 @@ namespace epms.Data.Configuration
         {
         }
 
-        internal AccountCategoryConfiguration(string schema)
+        private AccountCategoryConfiguration(string schema)
         {
             ToTable("AccountCategory", schema);
             HasKey(x => x.Id);

@@ -17,7 +17,9 @@ namespace epms.Entities.Models
         public bool? BillStatus { get; set; }
         public int PackageId { get; set; }
         public int CustomerId { get; set; }
-        public virtual Package Package { get; set; }
-        public virtual Customer Customers { get; set; }
+        public Package Package { get; set; }
+        public Customer Customer { get; set; }
+        public Company Company { get; set; }
+        public Branch Branch { get; set; }
     }
 }

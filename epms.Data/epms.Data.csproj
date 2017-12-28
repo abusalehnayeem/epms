@@ -39,6 +39,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,12 +48,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationDbContext\ApplicationDbContext.cs" />
     <Compile Include="Configuration\AccountCategoryConfiguration.cs" />
     <Compile Include="Configuration\AccountGroupConfiguration.cs" />
     <Compile Include="Configuration\AccountMasterConfiguration.cs" />
     <Compile Include="Configuration\BalanceSheetConfigurationConfiguration.cs" />
     <Compile Include="Configuration\BranchConfiguration.cs" />
     <Compile Include="Configuration\CompanyConfiguration.cs" />
+    <Compile Include="Configuration\PackageConfiguration.cs" />
+    <Compile Include="Configuration\BillingsHistoryConfiguration.cs" />
     <Compile Include="Configuration\CustomerConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

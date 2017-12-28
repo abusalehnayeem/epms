@@ -1,9 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace epms.Entities.Models
 {
     public class Customer:BaseEntity
     {
+        public Customer()
+        {
+            BillingsHistorys = new HashSet<BillingsHistory>();
+        }
         public string CustomerName { get; set; }
         public string CustomerImage { get; set; }
         public string FatherName { get; set; }
@@ -37,5 +42,6 @@ namespace epms.Entities.Models
         public string TradeLicAuthority { get; set; }
         public Branch Branch { get; set; }
         public Company Company { get; set; }
+        public ICollection<BillingsHistory> BillingsHistorys { get; set; }
     }
 }

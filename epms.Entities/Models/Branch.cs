@@ -2,11 +2,13 @@
 
 namespace epms.Entities.Models
 {
-    public class Branch:BaseEntity
+    public class Branch : BaseEntity
     {
         public Branch()
         {
-            this.Customers = new HashSet<Customer>();
+            Customers = new HashSet<Customer>();
+            BillingsHistorys = new HashSet<BillingsHistory>();
+            Packages = new HashSet<Package>();
         }
 
         public string BranchName { get; set; }
@@ -18,5 +20,7 @@ namespace epms.Entities.Models
 
         public Company Company { get; set; }
         public ICollection<Customer> Customers { get; set; }
+        public ICollection<BillingsHistory> BillingsHistorys { get; set; }
+        public ICollection<Package> Packages { get; set; }
     }
 }

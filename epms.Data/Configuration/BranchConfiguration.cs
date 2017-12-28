@@ -21,7 +21,7 @@ namespace epms.Data.Configuration
             Property(x => x.CompanyId).HasColumnName(@"CompanyId").HasColumnType("int").IsRequired();
             Property(x => x.BranchName).HasColumnName(@"BranchName").HasColumnType("nvarchar").IsRequired()
                 .HasMaxLength(150);
-            Property(x => x.BranchCode).HasColumnName(@"BranchCode").HasColumnType("smallint").IsRequired();
+            Property(x => x.BranchCode).HasColumnName(@"BranchCode").HasColumnType("int").IsRequired();
             Property(x => x.Address).HasColumnName(@"Address").HasColumnType("nvarchar").IsRequired().HasMaxLength(150);
             Property(x => x.Phone).HasColumnName(@"Phone").HasColumnType("nvarchar").IsOptional().HasMaxLength(15);
             Property(x => x.Fax).HasColumnName(@"Fax").HasColumnType("nvarchar").IsOptional().HasMaxLength(15);

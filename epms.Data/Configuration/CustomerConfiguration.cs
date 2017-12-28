@@ -76,11 +76,11 @@ namespace epms.Data.Configuration
             Property(x => x.IsApproved).HasColumnName(@"IsApproved").HasColumnType("bit").IsOptional();
             Property(x => x.IsActive).HasColumnName(@"IsActive").HasColumnType("bit").IsRequired();
             Property(x => x.IsDeleted).HasColumnName(@"IsDeleted").HasColumnType("bit").IsOptional();
-            Property(x => x.CreatedBy).HasColumnName(@"CreatedBy").HasColumnType("smallint").IsRequired();
+            Property(x => x.CreatedBy).HasColumnName(@"CreatedBy").HasColumnType("int").IsRequired();
             Property(x => x.CreatedDateTime).HasColumnName(@"CreatedDate").HasColumnType("datetime").IsRequired();
-            Property(x => x.UpdatedBy).HasColumnName(@"UpdatedBy").HasColumnType("smallint").IsOptional();
+            Property(x => x.UpdatedBy).HasColumnName(@"UpdatedBy").HasColumnType("int").IsOptional();
             Property(x => x.UpdatedDateTime).HasColumnName(@"UpdatedDate").HasColumnType("datetime").IsOptional();
-            Property(x => x.SortedBy).HasColumnName(@"SortedBy").HasColumnType("tinyint").IsOptional();
+            Property(x => x.SortedBy).HasColumnName(@"SortedBy").HasColumnType("int").IsOptional();
             Property(x => x.Remarks).HasColumnName(@"Remarks").HasColumnType("nvarchar").IsOptional().HasMaxLength(500);
 
             // Foreign keys

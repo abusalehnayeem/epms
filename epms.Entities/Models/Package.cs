@@ -17,5 +17,7 @@ namespace epms.Entities.Models
         public decimal Price { get; set; }
         public DateTime ActivatedDate { get; set; }
         public ICollection<BillingsHistory> BillingsHistorys { get; set; }
+        public Company Company { get; set; }
+        public Branch Branch { get; set; }
     }
 }

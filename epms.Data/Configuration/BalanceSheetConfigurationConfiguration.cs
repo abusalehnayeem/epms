@@ -32,34 +32,34 @@ namespace epms.Data.Configuration
 #pragma warning disable 1591    //  Ignore "Missing XML Comment" warning
 
 
-    namespace global::epms.Entities.Models.epms.Data.Mapping
-    {
-        #region POCO Configuration
+    //namespace global::epms.Entities.Models.epms.Data.Mapping
+    //{
+    //    #region POCO Configuration
 
-        // BalanceSheetConfiguration
-        [GeneratedCode("EF.Reverse.POCO.Generator", "2.34.1.0")]
-        internal class BalanceSheetConfigurationConfiguration : EntityTypeConfiguration<BalanceSheetConfiguration>
-        {
-            internal BalanceSheetConfigurationConfiguration()
-                : this("dbo")
-            {
-            }
+    //    // BalanceSheetConfiguration
+    //    [GeneratedCode("EF.Reverse.POCO.Generator", "2.34.1.0")]
+    //    internal class BalanceSheetConfigurationConfiguration : EntityTypeConfiguration<BalanceSheetConfiguration>
+    //    {
+    //        internal BalanceSheetConfigurationConfiguration()
+    //            : this("dbo")
+    //        {
+    //        }
 
-            internal BalanceSheetConfigurationConfiguration(string schema)
-            {
-                ToTable("BalanceSheetConfiguration", schema);
-                HasKey(x => x.Id);
+    //        internal BalanceSheetConfigurationConfiguration(string schema)
+    //        {
+    //            ToTable("BalanceSheetConfiguration", schema);
+    //            HasKey(x => x.Id);
 
-                //Property(x => x.Id).HasColumnName(@"Id").HasColumnType("int").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity);
-                //Property(x => x.GroupId).HasColumnName(@"GroupId").HasColumnType("int").IsOptional();
-                //Property(x => x.CategoryId).HasColumnName(@"CategoryId").HasColumnType("int").IsOptional();
-                //Property(x => x.Name).HasColumnName(@"Name").HasColumnType("nvarchar").IsOptional().HasMaxLength(100);
-                //Property(x => x.IsActive).HasColumnName(@"IsActive").HasColumnType("bit").IsOptional();
-            }
-        }
+    //            //Property(x => x.Id).HasColumnName(@"Id").HasColumnType("int").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity);
+    //            //Property(x => x.GroupId).HasColumnName(@"GroupId").HasColumnType("int").IsOptional();
+    //            //Property(x => x.CategoryId).HasColumnName(@"CategoryId").HasColumnType("int").IsOptional();
+    //            //Property(x => x.Name).HasColumnName(@"Name").HasColumnType("nvarchar").IsOptional().HasMaxLength(100);
+    //            //Property(x => x.IsActive).HasColumnName(@"IsActive").HasColumnType("bit").IsOptional();
+    //        }
+    //    }
 
-        #endregion
-    }
+    //    #endregion
+    //}
 
     // </auto-generated>
 }
