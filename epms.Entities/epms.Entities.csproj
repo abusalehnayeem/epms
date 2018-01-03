@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enum\CustomerType.cs" />
+    <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Models\AccountCategory.cs" />
     <Compile Include="Models\AccountMaster.cs" />
     <Compile Include="Models\BalanceSheetConfiguration.cs" />
@@ -50,12 +51,19 @@
     <Compile Include="Models\Company.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\AccountGroup.cs" />
-    <Compile Include="Models\ModelContext.cs" />
     <Compile Include="Models\Package.cs" />
     <Compile Include="Models\Session.cs" />
     <Compile Include="Models\Transaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Enum\IdentificationType.cs" />
+    <Compile Include="Repository\IBillingsHistoryRepository.cs" />
+    <Compile Include="Repository\IPackageRepository.cs" />
+    <Compile Include="Repository\ICustomerRepository.cs" />
+    <Compile Include="Repository\IAccountCategoryRepository.cs" />
+    <Compile Include="Repository\IAccountGroupRepository.cs" />
+    <Compile Include="Repository\IAccountMasterRepository.cs" />
+    <Compile Include="Repository\IBranchRepository.cs" />
+    <Compile Include="Repository\ICompanyRepository.cs" />
     <Compile Include="Repository\IRepository.cs" />
   </ItemGroup>
   <ItemGroup />

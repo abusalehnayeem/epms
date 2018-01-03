@@ -1,24 +1,23 @@
 ﻿using System.Data.Entity;
-using System.Web;
 using epms.Data.Configuration;
 using epms.Entities.Models;
 
-namespace epms.Data.ApplicationDbContext
+namespace epms.Data.Context
 {
     internal class ApplicationDbContext : DbContext
     {
-        internal ApplicationDbContext()
+        public ApplicationDbContext()
             : base("Name=EpmsConnection")
         {
-            Configuration.ProxyCreationEnabled = false;
-            Configuration.LazyLoadingEnabled = false;
+            //Configuration.ProxyCreationEnabled = false;
+            //Configuration.LazyLoadingEnabled = false;
         }
 
-        public ApplicationDbContext(string connectionString)
+        internal ApplicationDbContext(string connectionString)
             : base(connectionString)
         {
-            Configuration.ProxyCreationEnabled = false;
-            Configuration.LazyLoadingEnabled = false;
+            //Configuration.ProxyCreationEnabled = false;
+            //Configuration.LazyLoadingEnabled = false;
         }
 
         public static ApplicationDbContext Create()
@@ -26,7 +25,7 @@ namespace epms.Data.ApplicationDbContext
             return new ApplicationDbContext();
         }
 
-        public IDbSet<AccountCategory> AccountCategories { get; set; } // AccountCategory
+        public IDbSet<Package> AccountCategories { get; set; } // AccountCategory
         public IDbSet<AccountGroup> AccountGroups { get; set; } // AccountGroup
         public IDbSet<AccountMaster> AccountMasters { get; set; } // AccountMaster
         //public IDbSet<BalanceSheetConfiguration> BalanceSheetConfigurations { get; set; } // BalanceSheetConfiguration
@@ -38,8 +37,6 @@ namespace epms.Data.ApplicationDbContext
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-
             modelBuilder.Configurations.Add(new AccountCategoryConfiguration());
             modelBuilder.Configurations.Add(new AccountGroupConfiguration());
             modelBuilder.Configurations.Add(new AccountMasterConfiguration());
@@ -48,6 +45,8 @@ namespace epms.Data.ApplicationDbContext
             modelBuilder.Configurations.Add(new CustomerConfiguration());
             modelBuilder.Configurations.Add(new PackageConfiguration());
             modelBuilder.Configurations.Add(new BillingsHistoryConfiguration());
+
+            base.OnModelCreating(modelBuilder);
         }
 
     }

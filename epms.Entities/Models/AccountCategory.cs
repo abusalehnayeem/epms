@@ -2,7 +2,7 @@
 
 namespace epms.Entities.Models
 {
-    public class AccountCategory:BaseEntity
+    public class AccountCategory : BaseEntity
     {
         public AccountCategory()
         {

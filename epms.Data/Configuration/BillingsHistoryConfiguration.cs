@@ -13,7 +13,7 @@ namespace epms.Data.Configuration
 
         internal BillingsHistoryConfiguration(string schema)
         {
-            ToTable("Customer", schema);
+            ToTable("BillingsHistory", schema);
             HasKey(x => x.Id);
 
             Property(x => x.Id).HasColumnName(@"Id").HasColumnType("int").IsRequired()
